@@ -1,0 +1,25 @@
+{
+  "name": "group-messaging",
+  "description": "A messaging app for bridge players",
+  "homepage": " ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-http-to-https": "^1.1.4",
+    "node-fetch": "^2.3.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSCI3428/group-message.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CSCI3428/group-message.git/issues"
+  },
+ 
+}
