@@ -4,6 +4,7 @@ var mongodb = require('mongodb');
 var server = express();
 var globalDB;
 
+
 var user;
 var password;
 var host = '127.0.0.1'; //not sure if this is correct
@@ -25,3 +26,4 @@ server.use(express.urlencoded({ extended: false }));
 server.use('/scripts', express.static(__dirname + '/scripts'));
 server.use('/css', express.static(__dirname + '/css'));
 server.use(express.static(__dirname));
+
