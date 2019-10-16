@@ -1,25 +1,26 @@
 {
-  "name": "group-messaging",
-  "description": "A messaging app for bridge players",
-  "homepage": " ",
+  "name": "signins",
+  "version": "1.0.0",
+  "description": "used to sign in with email",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.16.4",
-    "express-http-to-https": "^1.1.4",
-    "node-fetch": "^2.3.0"
-  },
-  "engines": {
-    "node": "8.x"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CSCI3428/group-message.git"
+    "url": "git+https://github.com/CSCI3428/group-message.git"
   },
+  "keywords": [
+    "signins"
+  ],
+  "author": "Aida Sultan",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CSCI3428/group-message.git/issues"
+    "url": "https://github.com/CSCI3428/group-message/issues"
   },
- 
+  "homepage": "https://github.com/CSCI3428/group-message#readme",
+  "dependencies": {
+    "firebase": "^7.2.0"
+  }
 }
