@@ -3,7 +3,7 @@ var express = require('express');
 var mongodb = require('mongodb');
 var server = express();
 var globalDB;
-var url = ""
+var url = "";
 
 
 
