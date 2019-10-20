@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
+
+
+
 <style>
     h1 {
         color: black;
         text-align: center;
+        margin-top: 0%;
         font-size: 300%;
         font-family: Georgia, serif;
     }
@@ -21,15 +25,15 @@
         width: 300px;
         height: 100px;
         font-size: 50px;
-        font-family: Georgia, serif;  
+        font-family: Georgia, serif;
     }
 
     .button1 {
-       background-color: rgb(252, 177, 190) ; 
+        background-color: orange;
     }
 
     .button2 {
-        background-color: lightskyblue; 
+        background-color: lightskyblue;
     }
 
     .button3 {
@@ -38,8 +42,8 @@
     }
 </style>
 <h1>Bridge Messenger</h1>
-<button class="button button1" onclick="window.location='current_games.html';"> Group Chat </button>
-<button class="button button2"> Games </button>
-<button class="button button3"> Notifications </button>
+<button class="button button1" id="GC Button" onclick="window.location='feed.html';"> Group Chat </button>
+<button class="button button2" id="Games Button" onclick="window.location='currentGames.html';"> Games </button>
+<button class="button button3" id="Notif Button" onclick="window.location='notifications.html';"> Notifications </button>
 
 </html>
