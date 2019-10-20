@@ -3,6 +3,8 @@ var express = require('express');
 var mongodb = require('mongodb');
 var server = express();
 var globalDB;
+var url = ""
+
 
 
 var user;
@@ -20,10 +22,16 @@ var allowCrossDomain = function (req, res, next) {
     next();
 };
 
-erver.use(allowCrossDomain);
+server.use(allowCrossDomain);
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 server.use('/scripts', express.static(__dirname + '/scripts'));
 server.use('/css', express.static(__dirname + '/css'));
 server.use(express.static(__dirname));
 
+// this is from w3schools on how to create a database
+mongodb.connect(url, function (err, db) {
+    if (err) thrw err;
+    console.log("Database created!");
+    db.close();
+});
