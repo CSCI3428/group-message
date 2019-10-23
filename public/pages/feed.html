@@ -5,7 +5,9 @@
     <head>
         <link rel="stylesheet" href="styles/feedStyle.css">
         <script src="scripts/feedFunctions.js"></script>
-        <title>Bridge Chat Test</title>
+        <script src ="jquery.mobile-1.3.1.min"></script>
+        
+        <title>Bridge Chat</title>
         <meta charset="windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -14,21 +16,29 @@
         
         <div class="chat-window" id="myChat">
             
-         <form action="" class="form-container">
+         <form class="form-container">
              
             <h1>Bridge Chat</h1>
 
-            <textarea id ="chat" readonly></textarea>
-            
+            <!-- <textarea id ="chat" readonly>
+                
+            </textarea> -->
+            <ul id = "myList"></ul> 
             
             <label for="msg"><b>Messenger</b></label>
-            <textarea placeholder="Write a message.." id="msg" required></textarea>
-
-            <input type="button" class="btn" value = "Send" onclick = "display()">
-     
-            <button type = "button" id="FeedBackButton" onclick="window.location='frontPage.html';"> Back </button>
+            
+            <div class = "message-bar">
+                <textarea rows = "1" placeholder="Write a message.." id="msg" required></textarea>
+                <input type="button" class="btn" id = "sendButton" align = right value = "Send Message" onclick = "send()">
+                <button type = "button" id="FeedBackButton" onclick="window.location='frontPage.html';" >Back to Main Menu</button> 
+            </div> 
+            
+            
+            
             
         </form>
+            
+            
             
         </div>
         
