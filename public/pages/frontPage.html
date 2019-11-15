@@ -1,21 +1,51 @@
 <!DOCTYPE html>
+<!AHHHHHHHHH>
 <html>
 
 <head>
     <link rel="stylesheet" href="styles/frontPage.css">
     <script src="scripts/jquery.mobile-1.3.1.min.js"></script>
     <script src="scripts/jquery-1.8.3.min.js"></script>
+	
+
+	<style>
+		div.sticky {
+			position: sticky;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			padding:0px; 
+		}
+	</style>
+
+
+
 </head>
 
 <body>
+<script>
+	function scrollWin(x, y) {
+			window.scrollBy(x, y);
+		}
+		</script>
+		
+		
+	<div class="sticky">  	
+		<div class="sticky">
+		
+		<div class="sticky">
+			<img src="downArrow.png" width="80" height="100" id="downButton" onclick="scrollWin(0, 75)" align="right"></img>
+		</div>
+			<img src="upArrow.png" width="80" height="100" id="upButton" onclick="scrollWin(0, -75)" align="right"></img>
+		</div>
 
-    <h1>Bridge Messenger</h1>
+	</div>
+
+	<h1>Bridge Messenger</h1>
     <button class="button button1" id="GC Button" onclick="window.location='feed.html';"> Group Chat </button>
     <button class="button button2" id="Games Button" onclick="window.location='currentGames.html';"> Games </button>
-    <button class="button button3" id="Notif Button" onclick="window.location='notifications.html';"> Notifications
-    </button>
+    <button class="button button3" id="Notif Button" onclick="window.location='notifications.html';"> Notifications</button>
 
 </body>
-
 
 </html>
